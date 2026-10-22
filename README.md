@@ -64,6 +64,16 @@ Later events test the reasoning but did not inform it:
 
 No stablecoin depeg, contract exploit, delisting or enforcement action was found.
 
+## Update, 22 October 2026
+
+A second reading of the record found three points this review had not recorded. The recommendation does not change.
+
+- **When reassignment is meant to be used.** The verified V2 source, public from 07:18 UTC on 25 August 2025, documents the reassignment function: it "is meant to be used only if a user loses access to their wallet prior to vesting beginning or when a malicious account acquires WLFI via exploit." The function checks neither condition. The line was added after the auditor's finding M-1, which asked for documentation of when the function would be called. Cyfrin's audit work ran 13 to 15 August 2025; its report is dated 5 September.
+- **The token terms.** The token terms in force at the cutoff (updated 25 August 2025, archived on 28 August) reserved the right to "suspend or block your access to the Tokens upon suspicion of any unauthorized access or use", and to block users in restricted countries. With the code comment, they gave grounds for the two powers but no process: who approves a freeze or a reassignment, who is told, or how a holder can contest it. "No use policy" in this review means no such process.
+- **A delisting after the cutoff.** In June 2026 HTX suspended WLFI trading and moved to delist USD1, saying World Liberty had frozen HTX-linked addresses without due process; a UK sanctions designation of Huobi Global S.A., which HTX calls a separate entity, came first ([The Block, 6 June 2026](https://www.theblock.co/news/business/2026-06-06-htx-to-delist-trump-linked-usd1-after-saying-world-liberty-financial-froze-exchange-linked-addresses-403885)). The earlier line "No ... delisting ... was found" is superseded.
+
+Sources: the verified V2 source ([Etherscan](https://etherscan.io/address/0x0959a6eaea3c23148fe69ddd703c277bc6ad79cc#code)); [Cyfrin's report](https://github.com/Cyfrin/cyfrin-audit-reports/raw/main/reports/2025-09-05-cyfrin-wlf-v2.1.pdf); the token terms as archived ([Wayback, 28 Aug 2025](https://web.archive.org/web/20250828173933id_/https://worldlibertyfinancial.com/wlfi/terms)).
+
 ## Sources and scope
 
 [Worked evidence trail](EVIDENCE_TRAIL.md) · [Method and limits](METHOD_AND_LIMITS.md) · [Sources](SOURCES.md)
